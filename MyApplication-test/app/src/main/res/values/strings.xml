@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">ShopPal</string>
     <string name="navi_trend">Trend</string>
     <string name="navi_ranking">Ranking</string>
     <string name="navi_camera">Camera</string>
