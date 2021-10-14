@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_navi_trend"
+        android:icon="@drawable/trend"
+        android:title=""/>
+    <item
+        android:id="@+id/bottom_navi_camera"
+        android:title=""
+        android:icon="@drawable/camera"/>
+    <item
+        android:id="@+id/bottom_navi_ranking"
+        android:icon="@drawable/ranking"
+        android:title=""/>
+<!--    <item-->
+<!--        android:id="@+id/bottom_navi_weight"-->
+<!--        android:title="@string/bottom_navi_weight"-->
+<!--        android:icon="@drawable/weight"/>-->
+</menu>
