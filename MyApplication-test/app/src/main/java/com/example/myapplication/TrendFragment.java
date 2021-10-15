@@ -1,10 +1,12 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import androidx.fragment.app.Fragment;
 
@@ -27,6 +29,7 @@ public class TrendFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
+    private Button bt_share;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -35,11 +38,31 @@ public class TrendFragment extends Fragment {
         view = inflater.inflate(R.layout.fragment_trend, container, false);
         lineChart = view.findViewById(R.id.trend);
 
+
+        //share to social media event
+        bt_share = view.findViewById(R.id.sharebutton);
+        bt_share.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                // TODO Auto-generated method stub
+                Intent myIntent = new Intent(Intent.ACTION_SEND);
+                myIntent.setType("text/plain");
+                String body = "Your body here";
+                String sub = "Your Subject";
+                myIntent.putExtra(Intent.EXTRA_SUBJECT,sub);
+                myIntent.putExtra(Intent.EXTRA_TEXT,body);
+                startActivity(Intent.createChooser(myIntent, "Share Using"));
+            }
+        });
+
+
+        //add linechart and data
         ArrayList<Entry> yValues = new ArrayList<>();
 
-        yValues.add(new Entry(0,60));
-        yValues.add(new Entry(1,49));
-        yValues.add(new Entry(2,42));
+        yValues.add(new Entry(0,20));
+        yValues.add(new Entry(1,41));
+        yValues.add(new Entry(2,50));
+        yValues.add(new Entry(3,62));
 
         LineDataSet set1 = new LineDataSet(yValues,"non-overbuying quantity");
         set1.setLineWidth(3f);

@@ -93,7 +93,6 @@ public class RankFragment extends Fragment {
 
         bt_change_friends = getActivity().findViewById(R.id.button_change_friends);
         bt_change_friends.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View arg0) {
                 // TODO Auto-generated method stub

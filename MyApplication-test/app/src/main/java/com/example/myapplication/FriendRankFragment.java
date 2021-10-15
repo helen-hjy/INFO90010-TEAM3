@@ -78,7 +78,6 @@ public class FriendRankFragment extends Fragment {
 
         bt_change_public = getActivity().findViewById(R.id.button_change_public);
         bt_change_public.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View arg0) {
                 // TODO Auto-generated method stub
