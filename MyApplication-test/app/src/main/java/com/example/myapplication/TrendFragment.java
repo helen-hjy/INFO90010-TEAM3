@@ -62,7 +62,7 @@ public class TrendFragment extends Fragment {
         yValues.add(new Entry(0,20));
         yValues.add(new Entry(1,41));
         yValues.add(new Entry(2,50));
-        yValues.add(new Entry(3,62));
+        yValues.add(new Entry(3,52));
 
         LineDataSet set1 = new LineDataSet(yValues,"non-overbuying quantity");
         set1.setLineWidth(3f);
@@ -87,7 +87,8 @@ public class TrendFragment extends Fragment {
         //add label to x-axis
         ArrayList<String> xLabel = new ArrayList<>();
         for (int i = 1; i <= yValues.size(); i++){
-            xLabel.add("Day"+i);
+            int j= i*7;
+            xLabel.add("9/"+j);
         }
         xAxis.setGranularityEnabled(true);
         xAxis.setValueFormatter(new IndexAxisValueFormatter(xLabel));
