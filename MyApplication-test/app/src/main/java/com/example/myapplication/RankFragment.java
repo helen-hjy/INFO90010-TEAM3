@@ -38,16 +38,12 @@ public class RankFragment extends Fragment {
     }
 
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_rank, container, false);
     }
-
-
-
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -99,9 +95,6 @@ public class RankFragment extends Fragment {
                 getActivity().setContentView(R.layout.fragment_friend_rank);
             }
         });
-
-
-
 
 
     }

@@ -10,29 +10,29 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="15dp"
         android:text="Your non-overbuying Trend"
         android:textColor="#0E1C2B"
-        android:textSize="25dp"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="false"
-        android:layout_marginTop="50dp"/>
+        android:textSize="20dp" />
 
     <com.github.mikephil.charting.charts.LineChart
         android:id="@+id/trend"
-        android:layout_width="416dp"
-        android:layout_height="379dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
         tools:layout_editor_absoluteX="-3dp"
-        tools:layout_editor_absoluteY="275dp"
-        android:layout_below="@+id/title"/>
+        tools:layout_editor_absoluteY="275dp" />
 
     <Button
         android:id="@+id/sharebutton"
         android:layout_width="260dp"
         android:layout_height="40dp"
         android:layout_below="@+id/trend"
-
-        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="60dp"
         android:layout_marginTop="12dp"
         android:text="share to social media" />
 
