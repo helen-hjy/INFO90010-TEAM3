@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
         mButton2 = findViewById(R.id.confirm_button);
 
         mButton3=findViewById(R.id.show_progress);
-//        mButton3=findViewById(R.id.show_progress);
         //handle button click
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,7 +62,8 @@ public class MainActivity extends AppCompatActivity {
         mButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.comparison);
+//                setContentView(R.layout.comparison);
+                setContentView(R.layout.comparison2);
             }
         });
 
