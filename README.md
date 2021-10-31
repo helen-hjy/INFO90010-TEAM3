@@ -1,4 +1,4 @@
-###Running instruction:
+Running instruction:
 
 We implemented the product into two applications and each one has packed up into apks and you can feel free to download to your mobile hone and installed them. 
 
